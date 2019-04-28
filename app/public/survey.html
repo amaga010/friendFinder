@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Firend Finder Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">Survey Questions</h4>
+            </div>
+            <div class="panel-body">
+
+                <form role="form" method="POST">
+
+                    <div class="form-group">
+                        <label for="">Name (Required)</label>
+                        <input type="text" class="form-control" id="surveyName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Link to Photo (Required)</label>
+                        <input type="text" class="form-control" id="photo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Question 1</h2>
+                        <h4>You enjoy vibrant social events with lots of people.</h4>
+                        <select  class="question" id="question1" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Question 2</h2>
+                        <h4>You often spend time exploring unrealistic yet intriguing ideas.</h4>
+                        <select  class="question" id="question2" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Question 3</h2>
+                        <h4>Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.</h4>
+                        <select  class="question" id="question3" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 4</h2>
+                        <h4>You often think about what you should have said in a conversation long after it has taken place.</h4>
+                        <select  class="question" id="question4" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 5</h2>
+                        <h4>If your friend is sad about something, your first instinct is to support them emotionally, not try to solve their problem.</h4>
+                        <select  class="question" id="question5" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 6</h2>
+                        <h4>People can rarely upset you.</h4>
+                        <select  class="question" id="question6" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 7</h2>
+                        <h4>You rarely worry if you made a good impression on someone you met.</h4>
+                        <select  class="question" id="question7" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 8</h2>
+                        <h4>It would be a challenge for you to spend the whole weekend all by yourself without feeling bored.</h4>
+                        <select  class="question" id="question8" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 9</h2>
+                        <h4>You often rely on other people to be the ones to start a conversation and keep it going.</h4>
+                        <select  class="question" id="question9" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                          </select>
+                    </div>
+                    <div class="form-group">
+                        <h2>Question 10</h2>
+                        <h4>You are more of a detail-oriented than a big picture person.</h4>
+                        <select  class="question" id="question10" required>
+                            <option value=""></option>
+                            <option value="1">1 (strongly disagree))</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree))</option>
+                          </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit" id="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+    <footer class="footer">
+      <div class="container">
+            <p><a href="/api/friends">API Frineds List</a> | <a href="/api/waitlist">GitHub Repository</a></p>
+      </div>
+    </footer>
+    </div>
+
+    <div id="friendMatch" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Your New Friend Is:</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="newFriendName"></h2>
+						<img id="newFriendPhoto" src="#" width=250px>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+$(document).ready(function(event){
+    $("#submit").on("click", function(event) {
+        event.preventDefault()
+        collectData()
+    }) 
+    function collectData() {
+            var friends = {
+                name: $('#surveyName').val().trim(),
+                photo: $('#photo').val().trim(),
+                scores: [
+                    $('#question1').val(),
+                    $('#question2').val(),
+                    $('#question3').val(),
+                    $('#question4').val(),
+                    $('#question5').val(),
+                    $('#question6').val(),
+                    $('#question7').val(),
+                    $('#question8').val(),
+                    $('#question9').val(),
+                    $('#question10').val()
+                ]
+            }
+            console.log(friends)
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", friends, function(data) {
+				$("#newFriendName").text(data.name);
+				$("#newFriendPhoto").attr("src", data.photo);
+				$("#friendMatch").modal("toggle");
+            });
+            $('.modal-dialog').modal();
+            console.log("data collected")
+        }
+}) 
+
+</script>
